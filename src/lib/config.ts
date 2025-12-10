@@ -6,6 +6,7 @@ const site = {
     url: 'https://github.com/huangyuzhang/svelte-starter',
     author: 'Simon Huang',
 }
+
 const nav = {
     main: [
         {
@@ -22,7 +23,7 @@ const nav = {
         },
         {
             "name": "About",
-            "url": "#"
+            "url": "/about"
         }
     ],
     footer: [
