@@ -1,5 +1,10 @@
 <script lang="ts">
-	import Hero1 from "./hero1.svelte";
+	import { site } from "$lib/config";
+	import Hero from "./hero.svelte";
 </script>
 
-<Hero1 />
+<svelte:head>
+	<title>{site.title} - {site.description}</title>
+</svelte:head>
+
+<Hero />

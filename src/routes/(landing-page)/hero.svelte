@@ -32,7 +32,7 @@
 					<div class="relative mx-auto max-w-[500px]">
 						<div class="aspect-square overflow-hidden rounded-2xl bg-muted">
 							<img
-								src="https://placehold.co/600x600"
+								src="https://placehold.co/600x600/ccc/777?font=noto-sans&text=Ship+now+with%5Cn+Svelte+Ship"
 								alt="Placeholder"
 								class="h-full w-full object-cover"
 							/>
