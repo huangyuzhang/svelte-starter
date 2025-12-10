@@ -1,6 +1,6 @@
 @import "tailwindcss";
-
 @import "tw-animate-css";
+@import '@fontsource-variable/nunito';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -118,4 +118,8 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+:root {
+  font-family: 'Nunito Variable', sans-serif;
 }

@@ -4,7 +4,9 @@
 	},
 	"editor.formatOnSave": false,
 	"cSpell.words": [
-		"tabler",
+		"fontsource",
+		"nunito",
 		"shadcn",
+		"tabler"
 	]
 }
