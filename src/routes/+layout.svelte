@@ -5,6 +5,7 @@
 	import 'nprogress/nprogress.css';
 	import NProgress from 'nprogress';
 	import { afterNavigate, beforeNavigate } from '$app/navigation';
+	import { Toaster } from "$lib/components/ui/sonner";
 
 	let { children } = $props();
 
@@ -36,4 +37,5 @@
 </svelte:head>
 
 <ModeWatcher />
+<Toaster richColors closeButton visibleToasts={6} position="bottom-right" />
 {@render children()}
