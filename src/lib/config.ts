@@ -14,15 +14,15 @@ const nav = {
         },
         {
             "name": "Posts",
-            "url": "/posts"
+            "url": "#"
         },
         {
             "name": "Projects",
-            "url": "/projects"
+            "url": "#"
         },
         {
             "name": "About",
-            "url": "/about"
+            "url": "#"
         }
     ],
     footer: [

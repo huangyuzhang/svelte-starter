@@ -4,7 +4,7 @@
 </script>
 
 <!-- Hero Section -->
-	<section class="relative overflow-hidden bg-card px-4 py-16 sm:px-6 lg:px-8">
+	<section class="relative overflow-hidden px-4 py-16 sm:px-6 lg:px-8">
 		<div class="container mx-auto">
 			<div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
 				<!-- Text Content -->
