@@ -1,3 +1,5 @@
+import { IconBrandGithub, IconBrandInstagram, IconBrandX } from "@tabler/icons-svelte";
+
 const site = {
     title: 'Svelte Starter',
     description: 'A starter template built with SvelteKit, Tailwind CSS and more',
@@ -25,20 +27,16 @@ const nav = {
     ],
     footer: [
         {
-            "name": "Home",
-            "url": "/"
+            "icon": IconBrandGithub,
+            "url": "https://github.com/huangyuzhang/svelte-starter"
         },
         {
-            "name": "Posts",
-            "url": "/posts"
+            "icon": IconBrandX,
+            "url": "#"
         },
         {
-            "name": "Projects",
-            "url": "/projects"
-        },
-        {
-            "name": "About",
-            "url": "/about"
+            "icon": IconBrandInstagram,
+            "url": "#"
         }
     ]
 }
