@@ -32,7 +32,7 @@
 					<div class="relative mx-auto max-w-[500px]">
 						<div class="aspect-square overflow-hidden rounded-2xl bg-muted">
 							<img
-								src="https://placehold.co/600x600/ccc/777?font=noto-sans&text=Svelte"
+								src="https://placehold.co/600x600/ccc/777?font=noto-sans&text=Simple%5CnSvelte%5CnStarter"
 								alt="Placeholder"
 								class="h-full w-full object-cover"
 							/>
