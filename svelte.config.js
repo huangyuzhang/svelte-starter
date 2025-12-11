@@ -4,7 +4,10 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
-	extensions: ['.svx', '.md'],
+	extensions: ['.svx', '.svx', '.md'],
+	smartypants: {
+		dashes: 'oldschool'
+	},
 	highlight: {
 		highlighter: async (code, lang = 'text') => {
 			const html = escapeSvelte(highlighter.codeToHtml(code, { lang, theme }));
