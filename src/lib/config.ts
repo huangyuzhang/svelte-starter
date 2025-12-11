@@ -7,6 +7,13 @@ const site = {
     author: 'Simon Huang',
 }
 
+const layout = {
+    headerWidth: 'max-w-6xl',
+    footerWidth: 'max-w-6xl',
+    baseWidth: 'max-w-5xl',
+    wideWidth: 'max-w-6xl',
+}
+
 const nav = {
     main: [
         {
@@ -42,4 +49,4 @@ const nav = {
     ]
 }
 
-export { site, nav };
+export { site, layout, nav };

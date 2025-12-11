@@ -9,7 +9,7 @@
 
 <SquareLines class=""/>
 <Header />
-<div class={cn(layout.baseWidth, "min-h-screen mx-auto")}>
+<div class={cn(layout.wideWidth, "min-h-screen mx-auto")}>
     {@render children?.()}
 </div>
 <Footer />

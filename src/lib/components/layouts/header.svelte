@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { nav } from "$lib/config";
+    import { layout, nav } from "$lib/config";
 	import { cn } from "$lib/utils";
     import ModeToggle from "$lib/components/mode-toggle.svelte";
     import Logo from "$lib/components/layouts/logo.svelte";
@@ -12,6 +12,7 @@
         "dark:border-neutral-600/40",
         "dark:bg-neutral-900/60",
         "backdrop-blur-2xl",
+        "shadow",
     ];
 
     const evaluateHeaderPosition = () => {
@@ -42,7 +43,8 @@
 >
     <div
         class={cn(
-            "flex items-center justify-between h-full max-w-5xl pl-6 pr-4 mx-auto border-b border-l-0 border-r-0 select-none lg:border-r lg:border-l lg:rounded-b-xl duration-300 ease-out",
+            layout.headerWidth,
+            "flex items-center justify-between h-full pl-6 pr-4 mx-auto border-b border-l-0 border-r-0 select-none lg:border-r lg:border-l lg:rounded-b-xl duration-300 ease-out",
             isScrolled ? scrolledContainerClasses.join(' ') : unScrolledContainerClasses.join(' ')
         )}
     >

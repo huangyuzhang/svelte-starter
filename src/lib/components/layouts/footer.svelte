@@ -1,5 +1,6 @@
 <script lang="ts">
-	import { nav, site } from "$lib/config";
+	import { layout, nav, site } from "$lib/config";
+	import { cn } from "$lib/utils";
 	import Logo from "./logo.svelte";
 </script>
 
@@ -7,7 +8,10 @@
     class="text-gray-700 bg-white border-t sm:mt-20 dark:bg-neutral-950 border-neutral-200 dark:border-neutral-800"
 >
     <div
-        class="container flex flex-col items-center py-8 mx-auto px-7 max-w-5xl sm:flex-row"
+        class={cn(
+            layout.footerWidth,
+            "container flex flex-col items-center py-8 mx-auto px-7 sm:flex-row"
+        )}
     >
         <Logo />
         <p
