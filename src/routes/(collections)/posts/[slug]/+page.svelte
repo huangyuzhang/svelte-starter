@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { cn, formatDate, getTagSlug } from '$lib/utils';
 	import { Badge } from '$lib/components/ui/badge';
-	import { authors,layout, site } from '$lib/config/index';
+	import { authors, layout, site } from '$lib/config/index';
 	import { m } from '$lib/paraglide/messages';
 
 	let { data } = $props();
