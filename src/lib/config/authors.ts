@@ -1,4 +1,4 @@
-export const authors = {
+export const authors: Record<string, Author> = {
 	simon: {
 		name: 'Simon Huang',
 		bio: 'Frontend Developer & UI/UX Enthusiast',
@@ -7,4 +7,10 @@ export const authors = {
 	}
 };
 
-export type Author = keyof typeof authors;
+export type Author = {
+	name: string;
+	bio?: string;
+	avatar?: string;
+	github?: string;
+	twitter?: string;
+};

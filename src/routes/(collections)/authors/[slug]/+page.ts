@@ -3,7 +3,7 @@ import { error } from '@sveltejs/kit';
 
 export async function load({ params }) {
 	const posts = import.meta.glob('/src/collections/posts/*.md', { eager: true });
-	const authorSlug = params.author;
+	const authorSlug = params.slug;
 	const author = authors[authorSlug];
 
 	if (!author) {
