@@ -1,9 +1,11 @@
 <script lang="ts">
 	import { site } from '$lib/config';
 	import { m } from '$lib/paraglide/messages';
-	import { Button } from '$lib/components/ui/button';
-	import { getLocale } from '$lib/paraglide/runtime.js';
+	import * as Tabs from '$lib/components/ui/tabs';
+	import { getLocale } from '$lib/paraglide/runtime';
 	import PostCard from '$lib/components/collections/post-card.svelte';
+	import PostListItem from '$lib/components/collections/post-list-item.svelte';
+	import { IconLayoutGrid, IconLayoutList } from '@tabler/icons-svelte';
 
 	let { data } = $props();
 	const locale = getLocale();
@@ -18,6 +20,11 @@
 			description: '探索我们的营销知识库，帮助您实现您的目标。'
 		}
 	};
+	let layout: 'grid' | 'list' = $state('grid');
+
+	function toggleLayout() {
+		layout = layout === 'grid' ? 'list' : 'grid';
+	}
 </script>
 
 <svelte:head>
@@ -33,15 +40,26 @@
 			<p class="text-muted-foreground">{content[locale].description}</p>
 		</div>
 		<!-- Action Button -->
-		<Button>{m.btn_contact_us()}</Button>
+		<Tabs.Root bind:value={layout}>
+			<Tabs.List>
+				<Tabs.Trigger value="grid"><IconLayoutGrid /></Tabs.Trigger>
+				<Tabs.Trigger value="list"><IconLayoutList /></Tabs.Trigger>
+			</Tabs.List>
+		</Tabs.Root>
 	</div>
 </section>
 
 <!-- Page Content -->
 <section class="relative overflow-hidden px-4 my-8 sm:px-6 lg:px-8">
-	<div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+	{#if layout === 'grid'}
+		<div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+			{#each data.posts as post}
+				<PostCard {post} />
+			{/each}
+		</div>
+	{:else if layout === 'list'}
 		{#each data.posts as post}
-			<PostCard {post} />
+			<PostListItem {post} />
 		{/each}
-	</div>
+	{/if}
 </section>

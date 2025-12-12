@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { site } from '$lib/config';
 	import { m } from '$lib/paraglide/messages';
-	import { Badge } from '$lib/components/ui/badge';
 	import { Button } from '$lib/components/ui/button';
 	import { getLocale } from '$lib/paraglide/runtime';
 	let { data } = $props();
@@ -33,17 +32,16 @@
 			<p class="text-muted-foreground">{content[locale].description}</p>
 		</div>
 		<!-- Action Button -->
-		<Button>{m.btn_contact_us()}</Button>
 	</div>
 </section>
 
 <!-- Page Content -->
 <section class="relative overflow-hidden px-4 my-8 sm:px-6 lg:px-8">
-	<div class="flex gap-4 md:grid-cols-2 lg:grid-cols-3">
+	<div class="flex gap-3 md:grid-cols-2 lg:grid-cols-3 flex-wrap">
 		{#each data.tags as tag}
-			<Badge variant="outline" href={`/tags/${tag.slug}`}>
+			<Button variant="outline" href={`/tags/${tag.slug}`}>
 				<span>{tag.name}</span>
-			</Badge>
+			</Button>
 		{/each}
 	</div>
 </section>

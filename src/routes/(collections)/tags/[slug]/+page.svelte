@@ -9,10 +9,12 @@
 	const locale = getLocale();
 	const content = {
 		en: {
-			title: 'Tag'
+			title: 'Tag',
+			btn_text: 'View all tags'
 		},
 		zh: {
-			title: '标签'
+			title: '标签',
+			btn_text: '查看所有标签'
 		}
 	};
 </script>
@@ -32,7 +34,7 @@
 			<p class="text-muted-foreground"></p>
 		</div>
 		<!-- Action Button -->
-		<Button>{m.btn_contact_us()}</Button>
+		<Button variant="outline" href="/tags">{content[locale].btn_text}</Button>
 	</div>
 </section>
 
