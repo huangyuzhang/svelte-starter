@@ -1,6 +1,13 @@
-import { mdsvex } from 'mdsvex';
 import adapter from '@sveltejs/adapter-auto';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
+import { mdsvex, escapeSvelte } from 'mdsvex';
+import { createHighlighter } from 'shiki';
+
+const theme = 'github-dark';
+const highlighter = await createHighlighter({
+	themes: [theme],
+	langs: ['javascript', 'typescript', 'json', 'bash', 'shell', 'html', 'python']
+});
 
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
