@@ -1,13 +1,16 @@
 <script lang="ts">
 	import { Badge } from '$lib/components/ui/badge';
+	import type { Post } from '$lib/types/content';
 	import { formatDate, getTagSlug } from '$lib/utils';
 
-	let { post } = $props();
+	let { post }: { post: Partial<Post> } = $props();
 </script>
 
 <article class="flex flex-col gap-2 border-b py-6 last:border-b-0">
 	<div class="flex items-center gap-2 text-sm text-muted-foreground">
-		<time datetime={post.date} class="whitespace-nowrap">{formatDate(post.date)}</time>
+		{#if post.date}
+			<time datetime={post.date} class="whitespace-nowrap">{formatDate(post.date)}</time>
+		{/if}
 		{#if post.tags}
 			<div class="flex gap-1">
 				{#each post.tags as tag, index}

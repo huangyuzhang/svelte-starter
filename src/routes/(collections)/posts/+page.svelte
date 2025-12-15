@@ -20,7 +20,7 @@
 			description: '探索我们的营销知识库，帮助您实现您的目标。'
 		}
 	};
-	let layout: 'grid' | 'list' = $state('grid');
+	let layout: 'grid' | 'list' = $state('list');
 
 	function toggleLayout() {
 		layout = layout === 'grid' ? 'list' : 'grid';
