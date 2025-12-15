@@ -5,6 +5,7 @@ excerpt: Web development is the work involved in developing a website for the In
 tags: [Web Development, Frontend, Backend, Full Stack]
 featured: true
 date: 2025-12-11
+locale: en
 ---
 
 Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network).
