@@ -3,7 +3,7 @@ title: Introduction
 excerpt: This is the introduction to this svelte starter template.
 author: simon
 slug: introduction
-tags: [wiki, docs]
+tags: [wiki, docs, Frontend]
 date: 2025-12-12
 locale: en
 ---
