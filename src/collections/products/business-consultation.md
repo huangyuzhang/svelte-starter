@@ -3,6 +3,7 @@ title: Business Consultation
 slug: business-consultation
 excerpt: Get expert advice and guidance on starting a business in the Web3 space.
 tags: [Business, Consulting, Web3]
+featured: true
 date: 2025-12-15
 ---
 

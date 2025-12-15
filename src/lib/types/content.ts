@@ -22,6 +22,7 @@ export interface Product {
 	category: string;
 	tags: string[];
 	published: boolean;
+	featured?: boolean;
 	excerpt?: string;
 	content: any;
 	image?: string;

@@ -30,7 +30,7 @@
 		<div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
 			<!-- Text Content -->
 			<div
-				class="order-2 flex flex-col items-center text-center lg:order-1 lg:items-start lg:text-left"
+				class="order-1 flex flex-col items-center text-center lg:order-1 lg:items-start lg:text-left"
 				in:fade={{ duration: 1000 }}
 			>
 				<h1 class="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
@@ -48,7 +48,7 @@
 			</div>
 
 			<!-- Image -->
-			<div class="order-1 lg:order-2" in:fly={{ y: 50, duration: 1000 }}>
+			<div class="order-2 lg:order-2 hidden sm:block" in:fly={{ y: 50, duration: 1000 }}>
 				<div class="relative mx-auto max-w-[500px]">
 					<div class="aspect-square overflow-hidden rounded-2xl">
 						<img src={IllustrationCelebration} alt="Placeholder" class="size-full object-cover" />

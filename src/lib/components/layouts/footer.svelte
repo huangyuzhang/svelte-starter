@@ -6,7 +6,7 @@
 </script>
 
 <section
-	class="text-gray-700 bg-white border-t sm:mt-20 dark:bg-neutral-950 border-neutral-200 dark:border-neutral-800"
+	class="text-gray-700 bg-white border-t mt-8 sm:mt-16 dark:bg-neutral-950 border-neutral-200 dark:border-neutral-800"
 >
 	<div
 		class={cn(
