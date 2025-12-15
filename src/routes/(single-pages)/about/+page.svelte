@@ -31,7 +31,7 @@
 			<p class="text-muted-foreground">{content[locale].description}</p>
 		</div>
 		<!-- Action Button -->
-		<Button>{m.btn_contact_us()}</Button>
+		<Button href="/contact">{m.btn_contact_us()}</Button>
 	</div>
 </section>
 

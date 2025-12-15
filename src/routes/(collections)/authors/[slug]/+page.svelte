@@ -10,13 +10,13 @@
 	let { data } = $props();
 	const locale = getLocale();
 	const content = {
-		en:{
-			posts:"Posts"
+		en: {
+			posts: 'Posts'
 		},
-		zh:{
-			posts:"文章"
+		zh: {
+			posts: '文章'
 		}
-	}
+	};
 </script>
 
 <svelte:head>

@@ -11,6 +11,7 @@
 				"We help businesses grow through strategic consulting, innovative solutions, and proven methodologies. Let's build your success story together.",
 			btn_query: 'Schedule Consultation',
 			btn_services: 'Our Products',
+			link_contact: '/contact',
 			link_services: '/products'
 		},
 		zh: {
@@ -19,6 +20,7 @@
 				'我们通过战略咨询、 创新的解决方案和已被验证可行的方法论帮助企业持续增长。 让我们一起创造属于您的成功故事。',
 			btn_query: '预约咨询',
 			btn_services: '服务项目',
+			link_contact: '/contact',
 			link_services: '/products'
 		}
 	};
@@ -40,10 +42,12 @@
 					{@html data[locale].subtitle}
 				</p>
 				<div class="mt-8 flex flex-col space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
-					<Button size="lg">{data[locale].btn_query}</Button>
-					<Button variant="outline" size="lg" href={data[locale].link_services}
-						>{data[locale].btn_services}</Button
-					>
+					<Button size="lg" href={data[locale].link_contact}>
+						{data[locale].btn_query}
+					</Button>
+					<Button variant="outline" size="lg" href={data[locale].link_services}>
+						{data[locale].btn_services}
+					</Button>
 				</div>
 			</div>
 
