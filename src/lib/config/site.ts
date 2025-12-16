@@ -1,6 +1,6 @@
 export const site = {
 	title: 'Simple Svelte Starter',
 	description: 'A starter template built with SvelteKit, Tailwind CSS and more',
-	url: 'https://github.com/huangyuzhang/svelte-starter',
+	url: 'https://github.com/huangyuzhang/simple-svelte-starter',
 	author: 'Simon Huang'
 };

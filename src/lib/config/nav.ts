@@ -27,7 +27,7 @@ export const nav = {
 	footer: [
 		{
 			icon: IconBrandGithub,
-			url: 'https://github.com/huangyuzhang/svelte-starter'
+			url: 'https://github.com/huangyuzhang/simple-svelte-starter'
 		},
 		{
 			icon: IconBrandX,
